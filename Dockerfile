@@ -13,7 +13,7 @@ RUN adduser -S nextjs -u 1001
 
 RUN mkdir /app
 WORKDIR /app
-COPY --from=base --chown=nextjs:nodejs package*.json ./
+COPY --from=base --chown=nextjs:nodejs /app/package*.json ./
 COPY --from=base --chown=nextjs:nodejs /app/public ./public
 COPY --from=base --chown=nextjs:nodejs /app/.next ./.next
 COPY --from=base --chown=nextjs:nodejs /app/node_modules ./node_modules
