@@ -1,6 +1,5 @@
-import { React, useState} from 'react';
+import { React, useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
-import { useEffect } from 'react/cjs/react.development';
 
 
 const FeedbackForm = () => {
