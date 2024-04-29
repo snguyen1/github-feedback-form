@@ -8,10 +8,11 @@ This is a `next.js` app which provide an user interface form to submit new issue
 3. `npm install`
 
 
-   a. Without docker: Run vscode debuuger to start the dev environment
+   a. Without docker: Run vscode debugger to start the dev environment
 
 
-    b. With docker: Run `docker-compose build && docker-compose up` in your terminal
+   b. With docker: Run `docker-compose -f docker-compose.dev.yml build && docker-compose -f docker-compose.dev.yml up` in your terminal
+
 
 
 4. To submit a feedback: Open `http://localhost:3000/{owner}/{repo}`
