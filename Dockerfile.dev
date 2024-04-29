@@ -1,4 +1,4 @@
-FROM node:16.14 as dev
+FROM node:22 as dev
 RUN mkdir -p /app
 WORKDIR /app
 COPY package*.json ./
