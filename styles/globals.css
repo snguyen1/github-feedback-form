@@ -35,7 +35,7 @@ body {
   }
 
   #gh-feedback-form > div > label {
-    @apply block font-semibold text-gray-700
+    @apply block font-semibold text-gray-700 dark:text-white
   }
 
 }
