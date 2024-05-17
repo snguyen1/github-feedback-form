@@ -123,22 +123,22 @@ const FeedbackForm = () => {
       <input hidden type="text" name="repo" value={formValues.repo} onChange={handleChange} />
       <input hidden type="text" name="owner" value={formValues.owner} onChange={handleChange} />
       <div>
-          <label htmlFor="gh-feedback-type" className="text-slate-900 dark:text-white">Type</label>
+          <label htmlFor="gh-feedback-type">Type</label>
           <div className="flex flex-row">
             <div className="px-5"><input type="radio" name="type" value="bug" checked={formValues.type === "bug"} onChange={handleChange} className="bg-white dark:bg-neutral-800"/><span className="mx-2 text-slate-900 dark:text-white">Bug</span></div>
             <div className="px-5"><input type="radio" name="type" value="feedback" checked={formValues.type === "feedback"} onChange={handleChange} className="bg-white dark:bg-neutral-800"/><span className="mx-2 text-neutral-900 dark:text-white">Feedback</span></div>
           </div>
       </div>
       <div>
-        <label htmlFor="gh-feedback-title" className="text-slate-900 dark:text-white">Issue Name</label>
+        <label htmlFor="gh-feedback-title">Issue Name</label>
         <input type="text" id="gh-feedback-title" name="title" required placeholder="Briefly explain..." value={ formValues.title } onChange={handleChange} className="bg-white dark:bg-neutral-800 text-slate-900 dark:text-white"/>
       </div>
       <div>
-        <label htmlFor="gh-feedback-email" className="text-slate-900 dark:text-white">Your Email</label>
+        <label htmlFor="gh-feedback-email">Your Email</label>
         <input type="email" id="gh-feedback-sender-email" name="email" required placeholder="Type your email..." value={ formValues.email } onChange={handleChange} className="bg-white dark:bg-neutral-800 text-slate-900 dark:text-white"/>
       </div>
       <div>
-        <label htmlFor="gh-feedback-comment" className="text-slate-900 dark:text-white">Comment</label>
+        <label htmlFor="gh-feedback-comment">Comment</label>
         <textarea id="gh-feedback-comment" name="comment" required placeholder="Description..." value={ formValues.comment } onChange={handleChange} className="bg-white dark:bg-neutral-800 text-slate-900 dark:text-white"/>
       </div>
       <div>
